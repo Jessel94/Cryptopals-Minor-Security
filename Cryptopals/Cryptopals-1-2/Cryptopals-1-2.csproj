@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C1E5DD9-94AD-4160-9D3B-9D7843F37BD0}</ProjectGuid>
+    <ProjectGuid>{5D6BB198-293C-43F3-B40E-19DB9BB2704D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Cryptopals_1_1</RootNamespace>
-    <AssemblyName>Cryptopals-1-1</AssemblyName>
+    <RootNamespace>Cryptopals_1_2</RootNamespace>
+    <AssemblyName>Cryptopals-1-2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
