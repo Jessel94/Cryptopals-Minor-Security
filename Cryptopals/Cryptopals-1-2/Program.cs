@@ -16,7 +16,6 @@ namespace Cryptopals_1_2
             var stringVal = ByteHelper.StringFromByteArray(xorValues);
 
             Console.WriteLine(stringVal);
-
             if (stringVal.Equals(ExpectedAnswer))
             {
                 Console.WriteLine("The answer is Correct!");

@@ -19,7 +19,6 @@ namespace Cryptopals_1_1
 
             // Print the result and wait for a key press to prevent it shutting down right away.
             Console.WriteLine(base64);
-
             if (base64.Equals(ExpectedAnswer))
             {
                 Console.WriteLine("The answer is Correct!");
