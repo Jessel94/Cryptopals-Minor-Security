@@ -15,13 +15,7 @@ namespace Cryptopals_1_2
             var xorValues = XorHelper.Xor(byteArr1, byteArr2);
             var stringVal = ByteHelper.HexFromByteArray(xorValues);
 
-            Console.WriteLine(stringVal);
-            if (stringVal.Equals(ExpectedAnswer))
-            {
-                Console.WriteLine("The answer is Correct!");
-            }
-
-            Console.ReadKey();
+            AnswerVerifying.Verify(ExpectedAnswer, stringVal);
         }
     }
 }

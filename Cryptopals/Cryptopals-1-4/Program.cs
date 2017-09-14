@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using CryptopalsShared;
 
 namespace Cryptopals_1_4
 {
-    using System.IO;
-
-    using CryptopalsShared;
-
     public class Program
     {
         private const string ExpectedAnswer = "Now that the party is jumping\n";
@@ -29,13 +26,7 @@ namespace Cryptopals_1_4
                     });
             var decryptedMessage = decryptedMessages.First(kv => kv.Value == decryptedMessages.Values.Max()).Key;
 
-            Console.WriteLine(decryptedMessage);
-            if (decryptedMessage.Equals(ExpectedAnswer))
-            {
-                Console.WriteLine("The answer is Correct!");
-            }
-
-            Console.ReadKey();
+            AnswerVerifying.Verify(ExpectedAnswer, decryptedMessage);
         }
     }
 }

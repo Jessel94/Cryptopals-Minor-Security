@@ -51,5 +51,12 @@ namespace CryptopalsShared
 
             return dict.First(kv => kv.Key == dict.Keys.Max()).Value[0];
         }
+
+        public static string XorEncrypt(string plainTextMessage, string plainTextKey)
+        {
+            var hexMessage = StringHelper.StringToHex(plainTextMessage);
+            var encryptionKey = DictionaryHelper.GenerateRepeatingKey(StringHelper.StringToHex(plainTextKey), hexMessage.Length);
+            return ByteHelper.HexFromByteArray(Xor(HexHelper.HexToBytes(encryptionKey), HexHelper.HexToBytes(hexMessage)));
+        }
     }
 }

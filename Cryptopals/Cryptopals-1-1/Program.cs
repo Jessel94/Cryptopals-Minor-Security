@@ -13,13 +13,7 @@ namespace Cryptopals_1_1
             var data = HexHelper.HexToBytes(HexString);
             var base64 = Convert.ToBase64String(data);
 
-            Console.WriteLine(base64);
-            if (base64.Equals(ExpectedAnswer))
-            {
-                Console.WriteLine("The answer is Correct!");
-            }
-
-            Console.ReadKey();
+            AnswerVerifying.Verify(ExpectedAnswer, base64);
         }
     }
 }

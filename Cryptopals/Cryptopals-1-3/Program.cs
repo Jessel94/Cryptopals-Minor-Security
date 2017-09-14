@@ -13,13 +13,7 @@ namespace Cryptopals_1_3
             var data = HexHelper.HexToBytes(HexString);
             var decryptedMessage = XorHelper.XorDecrypt(data);
 
-            Console.WriteLine(decryptedMessage);
-            if (decryptedMessage.Equals(ExpectedAnswer))
-            {
-                Console.WriteLine("The answer is Correct!");
-            }
-
-            Console.ReadKey();
+            AnswerVerifying.Verify(ExpectedAnswer, decryptedMessage);
         }
     }
 }
