@@ -9,11 +9,11 @@ namespace Cryptopals_1_2
 
         public static void Main(string[] args)
         {
-            var byteArr1 = HexHelper.ConvertFromStringToHex("1c0111001f010100061a024b53535009181c");
-            var byteArr2 = HexHelper.ConvertFromStringToHex("686974207468652062756c6c277320657965");
+            var byteArr1 = HexHelper.HexToBytes("1c0111001f010100061a024b53535009181c");
+            var byteArr2 = HexHelper.HexToBytes("686974207468652062756c6c277320657965");
 
-            var xorValues = XorHelper.Xor2HexArrays(byteArr1, byteArr2);
-            var stringVal = ByteHelper.StringFromByteArray(xorValues);
+            var xorValues = XorHelper.Xor(byteArr1, byteArr2);
+            var stringVal = ByteHelper.HexFromByteArray(xorValues);
 
             Console.WriteLine(stringVal);
             if (stringVal.Equals(ExpectedAnswer))

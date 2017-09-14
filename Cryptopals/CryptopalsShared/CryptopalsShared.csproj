@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bytehelper.cs" />
+    <Compile Include="ByteHelper.cs" />
+    <Compile Include="DictionaryHelper.cs" />
     <Compile Include="HexHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XorHelper.cs" />

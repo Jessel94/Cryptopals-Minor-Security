@@ -5,7 +5,7 @@ namespace CryptopalsShared
 {
     public class ByteHelper
     {
-        public static string StringFromByteArray(byte[] byteArray)
+        public static string HexFromByteArray(byte[] byteArray)
         {
             var str = new StringBuilder();
             foreach (var byteVal in byteArray)
