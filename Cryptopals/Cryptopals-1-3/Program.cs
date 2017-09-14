@@ -11,10 +11,10 @@ namespace Cryptopals_1_3
         public static void Main(string[] args)
         {
             var data = HexHelper.HexToBytes(HexString);
-            var decryptedMessage1 = XorHelper.XorDecrypt(data);
+            var decryptedMessage = XorHelper.XorDecrypt(data);
 
-            Console.WriteLine(decryptedMessage1);
-            if (decryptedMessage1.Equals(ExpectedAnswer))
+            Console.WriteLine(decryptedMessage);
+            if (decryptedMessage.Equals(ExpectedAnswer))
             {
                 Console.WriteLine("The answer is Correct!");
             }
